@@ -1,0 +1,69 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+.bg-image {
+    background-image: url('/img/fundo_black.jpg'); /* imagem fixa no ínicio do site */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /*fixador */
+    height: 100%;
+}
+.navbar {
+    background: white;
+}
+
+.btn img{  /* configurando o botão de rolagem */
+    height: 50px;
+    width: auto;
+}
+
+.cast { /* customizando a seção onde se encontra os cards do personagens */
+    
+    background: linear-gradient(90deg, rgba(255,238,135,1) 0%, rgba(255,140,140,1) 50%, rgba(164,212,255,1) 100%); /* adicionando fundo degrade com as tres cores principais da série */
+    padding: 20px 0; /* adiciona um pouco de espaço vertical dentro da seção */
+}
+.card-custom{ /* customizando os cards dos personagens */
+    margin: 20px; 
+    width: 18rem; /* largura fixa para os cards */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Suaviza a transição de transformação e sombra */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.card-img-top{ /* customização das imagens dentro do card */ 
+    width: 100%; /* garante que a imagem cubra toda a largura do card */
+    height: 15v; /* define a altura da imagem */
+    object-fit: cover; /* garante que a imagem cubra o espaço sem distorções */
+    transition: transform 0.3s;
+}
+
+.card-custom:hover { /* adicionando efeito de hover, ou seja, passar o mouse por cima do card */
+    transform: scale(1.05); /* o card aumenta ao passar o mouse */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Aumenta a sombra para dar um efeito de elevação */
+}
+
+.card-img-top:hover { /* adicionando efeito de hover na imagem do card */
+    transform: scale(1.05); /* aumenta  a imagem dentro do card ao passar o mouse*/
+}
+
+.footer { /* configuração do rodapé */
+    background-color: #000; /* Cor de fundo preta */
+    color: #fff; /* Texto branco */
+    padding: 10px 0; /* Padding vertical para dar espaço */
+    text-align: center; /* Centraliza o texto */
+}
+
+.footer p {
+    margin: 0; /* Remove margens padrão do <p> */
+    font-size: 16px; /* Tamanho do texto */
+}
+
+.footer i {
+    margin-right: 5px; /* Espaço entre o ícone e o texto */
+}
+
+.form-group{ /* Formulário de feedback  */ 
+    color: rgb(151, 255, 255);
+    font-size: large;
+}

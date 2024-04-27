@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site de Friends</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+<body>
+
+<header>
+    <!-- criando  a navbar com o bootstrap -->
+    <nav class="navbar navbar-expand-sm navbar-light bg-light">
+        <div class="container">
+            <a href="index.html" class="navbar-brand">
+                <img src="img/friends.gif" alt="Welcome" width="142">
+            </a>
+            <!--Adicionando o botão para ser ativado ao redimensionar a página-->
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#nav-principal">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <!--Criando links e botão de Entrar-->
+            <div class="collapse navbar-collapse" id="nav-principal">
+
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="" class="nav-link" style="color: firebrick;">frequently asked questions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link" style="color: gold;">episode guides</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link" style="color:dodgerblue;">music in episodes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link" style="color: forestgreen;">feedback</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://www.friends-tv.org/index.html" class="btn btn-outline-dark ml-4" target="_blank">site original</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+
+<!-- formulario de feedback-->
+<div class="bg-image d-flex justify-content-center align-items-center flex-column" font-weight: bold;">
+    <div class="container">
+        <h2 style="color: rgb(151, 255, 255);">Formulário de Feedback</h2>
+        <form action="submit_feedback.php" method="POST">
+            <div class="form-group">
+                <label for="name">Nome:</label>
+                <input type="text" class="form-control" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">E-mail:</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="feedback">Feedback:</label>
+                <textarea class="form-control" id="feedback" name="feedback" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar Feedback</button>
+        </form>
+    </div>
+</div>
+
+
+
+<footer class="footer">
+    <div class="container">
+        <p><i class="fas fa-heart"></i> Atividade desenvolvida por Gabriel Mesquita</p>
+    </div>
+</footer>
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
